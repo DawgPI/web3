@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Triopt</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div id="toggle">
+                <i class="indicator"></i>
+                </div>
+            <img class="logo"><img src="images/logo.png">
+            <ul class="navItems">
+            <li><a href="#">home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">careers</a></li>
+            <li><a href="#">contact</a></li>
+            </ul>
+        <div class="links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        </nav>
+    <div class="wrapper">
+        <div class="cols cols0">
+            <span class="topline">Connect</span>
+            <h1>To the <span class="multitext"></span></h1>
+            <p>Welcome to TRIOPT we are your provider of technical services in the field of planning, implementation and optimization in the wireless and fixed network. As a reliable partner for mobile network operators and system providers, we plan, implement and optimize your wireless and fixed network. Do you have questions about process optimization or quality management? We would be happy to advise you! We also support you in project management and engineering.</p>
+            <div class="btns">
+                <button>CAD Team</button>
+                <button>Planning Team</button>
+                <button>X Team</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multitext",{
+            strings : ["future","source","innovation"],
+            loop : true,
+            typeSpeed : 100,
+            backSpeed : 80,
+            backDelay : 1500
+        })
+    </script>
+    <script>
+        const body = document.querySelector('body');
+        const toggle = document.getElementById('toggle');
+        toggle.onclick = function(){
+            toggle.classList.toggle('active');
+            body.classList.toggle('active');  
+        }
+    </script>
+</body>
+</html>
